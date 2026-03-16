@@ -7,6 +7,8 @@ export default function App() {
         <NavLink to='/' end>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
         <NavLink to='/contact'>Contact</NavLink>
+        <NavLink to='/signup'>Sign Up</NavLink>
+        <NavLink to='service'>Service</NavLink>
       </nav>
 
       <h1>Welcome to the Home Page!</h1>

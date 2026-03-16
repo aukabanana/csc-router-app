@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage.tsx'
 import ContactPage from './pages/ContactPage.tsx'
 import ServicePage from './pages/ServicePage.tsx'
 import Api from './pages/Api.tsx'
+import SignUpPage from './pages/SignUpPage.tsx'
 
 import './App.css'
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter ([
   {
     path: '/api',
     element: <Api />
+  },
+  {
+    path: 'signup',
+    element: <SignUpPage />
   },
 ])
 
