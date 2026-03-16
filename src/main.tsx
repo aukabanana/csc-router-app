@@ -7,20 +7,32 @@ import App from './App.tsx'
 
 import AboutPage from './pages/AboutPage.tsx'
 import ContactPage from './pages/ContactPage.tsx'
+import ServicePage from './pages/ServicePage.tsx'
+import Api from './pages/Api.tsx'
 
 const router = createBrowserRouter ([
   {
     path: '/',
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: '/about',
+        element: <AboutPage />
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />
+      },
+      {
+        path: '/service',
+        element: <ServicePage />
+      }
+    ],
   },
   {
-    path: '/about',
-    element: <AboutPage />
+    path: '/api',
+    element: <Api />
   },
-  {
-    path: '/contact',
-    element: <ContactPage />
-  }
 ])
 
 createRoot(document.getElementById('root')!).render(
