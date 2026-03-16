@@ -10,6 +10,8 @@ import ContactPage from './pages/ContactPage.tsx'
 import ServicePage from './pages/ServicePage.tsx'
 import Api from './pages/Api.tsx'
 
+import './App.css'
+
 const router = createBrowserRouter ([
   {
     path: '/',
