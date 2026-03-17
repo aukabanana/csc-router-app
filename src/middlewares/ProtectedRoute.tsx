@@ -5,7 +5,7 @@ type ProtectedRouteProps = {
 };
 
 function ProtectedRoute({ children }: ProtectedRouteProps) {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const location = useLocation();
 
   if (!isAuthenticated) {
